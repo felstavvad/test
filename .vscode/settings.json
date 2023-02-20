@@ -1,7 +1,6 @@
 {
     "python.linting.flake8Enabled": false,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
-
+    "python.linting.pylintEnabled": true,
     "code-runner.runInTerminal": true
 }
