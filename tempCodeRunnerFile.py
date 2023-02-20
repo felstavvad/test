@@ -1,7 +1,3 @@
-import re
-from random import choice
-
-
 def generate_password():
     global passwd
     global match
@@ -10,16 +6,3 @@ def generate_password():
     passwd = ''. join([choice(collect_chr) for l in range(1, 9)])
     rgx = ['\W', '[a-z]', '[A-Z]', '\d']
     match = list(filter(lambda x: re.search(r''+x+'', passwd), rgx))
-
-
-print("hello")
-
-generate_password()
-
-
-while True:
-    if len(match) == 4:
-        print(passwd)
-        break
-else:
-    generate_password()
