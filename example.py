@@ -11,7 +11,6 @@ def generate_password():
     rgx = ['\W', '[a-z]', '[A-Z]', '\d']
     match = list(filter(lambda x: re.search(r''+x+'', passwd), rgx))
 
-
 generate_password()
 
 
